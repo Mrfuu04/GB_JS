@@ -3,28 +3,39 @@
 // Обязательно использовать оператор return.
 
 function validateNums(x, y) {
+    let res = ''
     if (!Number.isInteger(x) || !Number.isInteger(y)) {
-        return 'Введите число!'
+        return 1;
     }
 }
 
+let message = 'Введите число!'
+
 function getSum(x, y) {
-    return validateNums(x, y);
+    if (validateNums(x, y)) {
+        return message
+    };
     return x + y;
 }
 
 function getDiv(x, y) {
-    return validateNums(x, y);
+    if (validateNums(x, y)) {
+        return message
+    };
     return x / y;
 }
 
 function getMul(x, y) {
-    return validateNums(x, y);
+    if (validateNums(x, y)) {
+        return message
+    };
     return x * y;
 }
 
 function getSub(x, y) {
-    return validateNums(x, y);
+    if (validateNums(x, y)) {
+        return message
+    };
     return x - y;
 }
 
